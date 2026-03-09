@@ -10,7 +10,11 @@
     "migrate": "node database/migrations/migrate.js",
     "seed": "node database/seeds/seed.js",
     "auto-push": "node watch-and-push.js",
-    "push-now": "powershell -ExecutionPolicy Bypass -File auto-push.ps1"
+    "push-now": "powershell -ExecutionPolicy Bypass -File auto-push.ps1",
+    "notify": "node notification-system.js",
+    "notify-test": "node notification-system.js test",
+    "notify-commit": "node notification-system.js commit",
+    "notify-status": "node notification-system.js status online"
   },
   "keywords": ["construction", "management", "nodejs", "mysql", "kashtec"],
   "author": "KASHTEC Tanzania Limited",
