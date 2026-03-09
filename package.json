@@ -8,7 +8,9 @@
     "dev": "nodemon server.js",
     "test": "jest",
     "migrate": "node database/migrations/migrate.js",
-    "seed": "node database/seeds/seed.js"
+    "seed": "node database/seeds/seed.js",
+    "auto-push": "node watch-and-push.js",
+    "push-now": "powershell -ExecutionPolicy Bypass -File auto-push.ps1"
   },
   "keywords": ["construction", "management", "nodejs", "mysql", "kashtec"],
   "author": "KASHTEC Tanzania Limited",
